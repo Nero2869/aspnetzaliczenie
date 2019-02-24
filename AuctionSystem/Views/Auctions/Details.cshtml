@@ -1,0 +1,66 @@
+﻿@model AuctionSystem.Models.Auction
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Auction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuctionTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuctionTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuctionDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuctionDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuctionDateAdd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuctionDateAdd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuctionPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuctionPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuctionShortDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuctionShortDesc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AuctionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
